@@ -1,4 +1,4 @@
-### **HTML List Elements Build Notes**
+### **Notes : HTML List Elements**
 
 #### **1. Ordered List (`<ol>`)**
 
