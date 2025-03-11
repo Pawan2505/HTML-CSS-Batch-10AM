@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--
+    1. Img Tag:
+        - src: Specifies the path to the image file (e.g., .png, .jpg, .gif)
+        - alt: Alternative text displayed if the image is not available
+        - title: Tooltip text that appears when you hover over the image
+        - width/height: Sets the dimensions of the image
+    2. Marquee Tag:
+        - direction: Specifies the direction of the marquee text (e.g., left, right, up, down)
+        - behavior: Defines the scrolling behavior (e.g., slide, scroll, alternate)
+        - scrollamount: Controls the speed of the marquee
+
+    3. Image Example:
+        - You can either use local images or online image URLs for your webpage.
+    -->
+
+    <!-- Type 1: Local Folder Image (Example) -->
+    <!-- 
+    <div style="text-align: center;">
+        <img src="image/img1.jpeg" title="Handsome Person" alt="Man Image" height="400px" width="500px">
+    </div> 
+    -->
+
+    <!-- Type 2: External Image URL (Example) -->
+    <!-- 
+    <center>
+        <img src="https://i.pinimg.com/474x/15/b8/87/15b887e38a5d3ffa33306a9ac7e0e3b0.jpg" 
+             title="Smart Dog" alt="Dog Image" height="400px" width="500px">
+    </center> 
+    -->
+
+    <!-- Example of Marquee Tag with different behaviors and directions -->
+
+    <!-- Marquee behavior="slide" direction="right" -->
+    <marquee behavior="slide" direction="right" scrollamount="50">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestias!
+    </marquee>
+
+    <!-- Marquee behavior="alternate" direction="left" -->
+    <marquee behavior="alternate" direction="left" scrollamount="50">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestias!
+    </marquee>
+
+    <!-- Marquee behavior="scroll" direction="up" -->
+    <marquee behavior="scroll" height="200px" direction="up">
+        Top marquee
+    </marquee>
+
+    <!-- Marquee behavior="scroll" direction="down" -->
+    <marquee behavior="scroll" height="200px" direction="down">
+        Bottom marquee
+    </marquee>
+
+</body>
+
+</html>
