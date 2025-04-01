@@ -3,52 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marquee</title>
+    <title>Marquee Example</title>
 </head>
 <body>
-    <!-- Center tag -->
-
-    <h1 align="right">Heading</h1>
-    <h1 align="center">Heading</h1>
-    <h1 align="left">Heading</h1>
-   
-    <center> <h1>Heading</h1></center>
-
-    <!-- Marquee -->
-
-    <div style="height: 50px; border: 1px solid black; line-height: 50px; margin-bottom: 50px;">     
-    <marquee>Lorem ipsum dolor sit amet.</marquee>
-    </div>
-
-    <div style="height: 50px; border: 1px solid black; line-height: 50px; margin-bottom: 50px;">     
-    <marquee behavior="" direction="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos?</marquee>
-    </div>
-
+    <!-- Aligning Headings in different positions -->
+    <h1 align="right">Right-Aligned Heading</h1>
+    <h1 align="center">Center-Aligned Heading</h1>
+    <h1 align="left">Left-Aligned Heading</h1>
     
-    <div style="height: 100px; border: 1px solid black;  margin-bottom: 50px;">     
-    <marquee behavior="" direction="up" height="100px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos?</marquee>
-    </div>
+    <!-- Using center tag (deprecated in HTML5) -->
+    <center><h1>Centered Heading</h1></center>
 
-    <div style="height: 100px; border: 1px solid black;  margin-bottom: 50px;">     
-    <marquee behavior="" direction="down" height="100px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos?</marquee>
-    </div>
-
-    <div style="height: 100px; border: 1px solid black;  margin-bottom: 50px;">     
-    <marquee behavior="scroll" direction="down" height="100px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos?</marquee>
-    </div>
-
-    <div style="height: 100px; border: 1px solid black;  margin-bottom: 50px;">     
-    <marquee behavior="slide" direction="down" height="100px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos?</marquee>
-    </div>
-
-    <div style="height: 100px; border: 1px solid black;  margin-bottom: 50px;">     
-    <marquee behavior="alternate" direction="down" height="100px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos?</marquee>
-    </div>
-
+    <!-- Marquee Examples -->
+    <!-- Basic marquee scrolling left (default) -->
     <div style="height: 50px; border: 1px solid black; line-height: 50px; margin-bottom: 50px;">     
-    <marquee behavior="alternate" direction="right" scrollamount="50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos?</marquee>
+        <marquee>Lorem ipsum dolor sit amet.</marquee>
     </div>
-    
 
+    <!-- Marquee scrolling to the right -->
+    <div style="height: 50px; border: 1px solid black; line-height: 50px; margin-bottom: 50px;">     
+        <marquee direction="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos?</marquee>
+    </div>
+
+    <!-- Marquee scrolling upwards -->
+    <div style="height: 100px; border: 1px solid black; margin-bottom: 50px;">     
+        <marquee direction="up" height="100px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos?</marquee>
+    </div>
+
+    <!-- Marquee scrolling downwards -->
+    <div style="height: 100px; border: 1px solid black; margin-bottom: 50px;">     
+        <marquee direction="down" height="100px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos?</marquee>
+    </div>
+
+    <!-- Marquee with scrolling behavior -->
+    <div style="height: 100px; border: 1px solid black; margin-bottom: 50px;">     
+        <marquee behavior="scroll" direction="down" height="100px">Scrolling Down</marquee>
+    </div>
+
+    <!-- Marquee with sliding behavior (stops after reaching end) -->
+    <div style="height: 100px; border: 1px solid black; margin-bottom: 50px;">     
+        <marquee behavior="slide" direction="down" height="100px">Sliding Down</marquee>
+    </div>
+
+    <!-- Marquee with alternating direction -->
+    <div style="height: 100px; border: 1px solid black; margin-bottom: 50px;">     
+        <marquee behavior="alternate" direction="down" height="100px">Bouncing Down</marquee>
+    </div>
+
+    <!-- Marquee with increased speed -->
+    <div style="height: 50px; border: 1px solid black; line-height: 50px; margin-bottom: 50px;">     
+        <marquee behavior="alternate" direction="right" scrollamount="50">Fast Moving Marquee</marquee>
+    </div>
 </body>
 </html>
