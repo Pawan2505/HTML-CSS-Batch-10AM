@@ -6,32 +6,84 @@
     <title>Form Application</title>
 </head>
 <body>
+    <!-- Student Registration Form -->
     <form>
         <fieldset>
             <legend>Student Form</legend>
-            Name : <input type="text" placeholder="Enter Name" required disabled><br>
-            Email : <input type="email" placeholder="Enter Email" value="pawan@gmail.com" readonly><br>
-            Age : <input type="number" placeholder="Enter Age"><br>
+            
+            <!-- Name Input (Disabled) -->
+            <!-- 'required' ensures input must be filled, 'disabled' prevents user from entering data -->
+            Name: <input type="text" placeholder="Enter Name" required disabled><br>
+            
+            <!-- Email Input (Readonly) -->
+            <!-- 'readonly' prevents editing while displaying default value -->
+            Email: <input type="email" placeholder="Enter Email" value="pawan@gmail.com" readonly><br>
+            
+            <!-- Age Input -->
+            <!-- Number input ensures only numerical values can be entered -->
+            Age: <input type="number" placeholder="Enter Age"><br>
+            
+            <!-- Date of Birth Input -->
+            <!-- Users can select a date from a date picker -->
             DOB: <input type="date"><br>
-            Address : <textarea rows="1" cols="20"></textarea><br>
-            Gender : <input type="radio" name="gender"> Male  <input type="radio" name="gender"> Female  <input type="radio" name="gender"> Other <br>
-            Hobbies : <input type="checkbox" checked> Gaming  <input type="checkbox"> Coding  <input type="checkbox"> Reading <br>
-            File : <input type="file"><br>
-          Select City:  <select>
+            
+            <!-- Address Input -->
+            <!-- Textarea allows multi-line input for addresses -->
+            Address: <textarea rows="1" cols="20"></textarea><br>
+            
+            <!-- Gender Selection -->
+            <!-- Radio buttons allow users to select one option from multiple choices -->
+            Gender:
+            <input type="radio" name="gender"> Male  
+            <input type="radio" name="gender"> Female  
+            <input type="radio" name="gender"> Other <br>
+            
+            <!-- Hobbies Selection -->
+            <!-- Checkboxes allow multiple selections -->
+            Hobbies:
+            <input type="checkbox" checked> Gaming  
+            <input type="checkbox"> Coding  
+            <input type="checkbox"> Reading <br>
+            
+            <!-- File Upload -->
+            <!-- Allows users to upload files -->
+            File: <input type="file"><br>
+            
+            <!-- City Selection Dropdown -->
+            <!-- Dropdown menu for city selection with 'selected' pre-selecting Kota -->
+            Select City:  
+            <select>
                 <option value="1">Gujrat</option>
                 <option value="2">UP</option>
                 <option value="3">Lucknow</option>
                 <option value="4">Delhi</option>
                 <option value="5" selected>Kota</option>
             </select><br>
-            Phone : <input type="tel" placeholder="Enter Phone"><br>
-            Rage : <input type="range"><br>
-            Color : <input type="color"> <br>
-            Password : <input type="password"><br>
+            
+            <!-- Phone Number Input -->
+            <!-- 'tel' input type allows users to enter phone numbers -->
+            Phone: <input type="tel" placeholder="Enter Phone"><br>
+            
+            <!-- Range Slider -->
+            <!-- Provides a slider input to select a range value -->
+            Range: <input type="range"><br>
+            
+            <!-- Color Picker -->
+            <!-- Allows users to pick a color -->
+            Color: <input type="color"> <br>
+            
+            <!-- Password Input -->
+            <!-- Password field hides input characters for security -->
+            Password: <input type="password"><br>
+            
+            <!-- Form Buttons -->
+            <!-- 'submit' sends form data, 'reset' clears all inputs -->
             <button type="submit">Submit</button>
             <button type="reset">Clear</button> <br>
+            
+            <!-- Alternative submit/reset buttons using input elements -->
             <input type="submit" value="Save">
-            <input type="reset" value="reset">
+            <input type="reset" value="Reset">
         </fieldset>
     </form>
 </body>
