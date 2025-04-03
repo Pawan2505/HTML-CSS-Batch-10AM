@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+    <title>Student Table</title>
 </head>
 <body>
+    <!-- Table Definition -->
     <table width="900px" height="600px" align="center" cellspacing="0" cellpadding="20" border="1">
+        
+        <!-- Table Caption -->
         <caption>Student Table</caption>
+
+        <!-- Table Header -->
         <thead>
             <tr bgcolor="red">
                 <th>S.No</th>
@@ -16,44 +21,54 @@
                 <th>Course</th>
             </tr>
         </thead>
+
+        <!-- Table Body -->
         <tbody>
-        <tr>
-            <td>1</td>
-            <td>Pawan</td>
-            <td>pawan@gmail.com</td>
-            <td>Full stack</td>
-        </tr>
-          <tr>
-            <td rowspan="3">2</td>
-            <td  rowspan="2">Pawan</td>
-            <td  rowspan="2">pawan@gmail.com</td>
-            <td>Full stack</td>
-        </tr>
-          <tr>
-            <!-- <td>3</td> -->
-            <!-- <td>Pawan</td> -->
-            <!-- <td>pawan@gmail.com</td> -->
-            <td>Full stack</td>
-        </tr>
-          <tr>
-            <!-- <td>4</td> -->
-            <td>Pawan</td>
-            <td>pawan@gmail.com</td>
-            <td>Full stack</td>
-        </tr>
-          <tr>
-            <td>5</td>
-            <td>Pawan</td>
-            <td>pawan@gmail.com</td>
-            <td>Full stack</td>
-        </tr>
+            <!-- Standard Row -->
+            <tr>
+                <td>1</td>
+                <td>Pawan</td>
+                <td>pawan@gmail.com</td>
+                <td>Full stack</td>
+            </tr>
+
+            <!-- Rowspan Example -->
+            <tr>
+                <!-- Merged across 3 rows -->
+                <td rowspan="3">2</td> 
+                 <!-- Merged across 2 rows -->
+                <td rowspan="2">Pawan</td>
+                <!-- Merged across 2 rows -->
+                <td rowspan="2">pawan@gmail.com</td> 
+                <td>Full stack</td>
+            </tr>
+            <tr>
+                <td>Full stack</td>
+            </tr>
+            <tr>
+                <td>Pawan</td>
+                <td>pawan@gmail.com</td>
+                <td>Full stack</td>
+            </tr>
+
+            <!-- Another Standard Row -->
+            <tr>
+                <td>5</td>
+                <td>Pawan</td>
+                <td>pawan@gmail.com</td>
+                <td>Full stack</td>
+            </tr>
         </tbody>
+
+        <!-- Table Footer -->
         <tfoot>
-<tr>
-    <td colspan="3" align="center">Duration</td>
-    <td>1.5 year</td>
-</tr>
+            <tr>
+                 <!-- Merging 3 columns -->
+                <td colspan="3" align="center">Duration</td>
+                <td>1.5 year</td>
+            </tr>
         </tfoot>
+        
     </table>
 </body>
 </html>
