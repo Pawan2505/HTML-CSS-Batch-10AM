@@ -3,11 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video</title>
+    <title>Video Tag</title>
 </head>
 <body>
-    <!-- <video src="video/movie (3).mp4" controls width="100%" height="600px" autoplay></video> -->
 
-   <video src="video/movie (3).mp4" width="100%" height="600px" autoplay muted loop></video>
+    <!-- 👇 Method 1: Basic Video Tag with Controls -->
+    <!-- 
+        - controls: show play, pause, volume etc.
+        - autoplay: video starts playing on page load
+        - width/height: sets the size of video player
+    -->
+    <!--
+    <video 
+        src="video/movie (3).mp4" 
+        controls 
+        width="100%" 
+        height="600px" 
+        autoplay>
+    </video>
+    -->
+
+    <!-- 👇 Method 2: Fullscreen Width(100%) Video with Autoplay, Muted and Loop -->
+    <!-- 
+        - autoplay: video auto-starts (muted is needed for autoplay to work smoothly)
+        - muted: required by browsers for autoplay to work without user interaction
+        - loop: video will replay again and again
+    -->
+    <video 
+        src="video/movie (3).mp4" 
+        width="100%" 
+        height="600px" 
+        autoplay 
+        muted 
+        loop>
+    </video>
+
 </body>
 </html>

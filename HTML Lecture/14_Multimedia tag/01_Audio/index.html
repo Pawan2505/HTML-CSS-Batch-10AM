@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>audio</title>
+    <title>Audio Tag</title>
 </head>
 <body>
+
+    <!-- 👇 Article Tag (description) -->
     <!-- <article>Lorem ipsum d.</article> -->
 
-    <!-- <audio controls loop muted>
-        <source  src="audio/horse (2).ogv">
-    </audio> -->
+    <!-- 👇 Method 1: Using <audio> tag with <source> tag -->
+    <!-- 
+        - controls: show play/pause UI
+        - loop: auto-repeat when audio ends
+        - muted: starts in muted state (good for autoplay support)
+    -->
+    <!--
+    <audio controls loop muted>
+        <source src="audio/horse (2).ogv" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    -->
 
-    <!-- <audio src="audio/horse (2).ogv"  loop autoplay></audio> -->
+    <!-- 👇 Method 2: Using audio tag directly with src attribute -->
+    <!-- 
+        - autoplay: starts playing automatically
+        - loop: repeat forever
+    -->
+    <!--
+    <audio src="audio/horse (2).ogv" autoplay loop></audio>
+    -->
+
 </body>
 </html>
